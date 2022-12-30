@@ -1,0 +1,353 @@
+@import "_variables.scss";
+
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+  color: black;
+}
+
+.wrapper {
+  max-width: 1346px;
+}
+.background {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  max-width: 1512px;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+
+  height: 100px;
+  align-items: center;
+
+  .logo {
+    flex-grow: 1;
+
+    p {
+      @include text(24px, 400, 29.05px);
+    }
+  }
+
+  .nav {
+    display: flex;
+    height: 100px;
+    align-items: center;
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      gap: 60.36px;
+
+      @media screen and (max-width: 441px) {
+        & {
+          gap: 10px;
+        }
+      }
+      @media screen and (max-width: 340px) {
+        & {
+          gap: 5px;
+        }
+      }
+
+      li a {
+        text-decoration: none;
+        @include text(20px, 400, 24.2px);
+        position: relative;
+
+        &.main:hover::after {
+          @include a_hover(92px, 1px);
+        }
+        &.gallery:hover::after {
+          @include a_hover(66px, 1px);
+        }
+        &.prices:hover::after {
+          @include a_hover(58px, 1px);
+        }
+      }
+    }
+  }
+}
+// MAIN
+//SECTION HERO
+.hero {
+  margin-top: 40px;
+  margin-bottom: 108px;
+  background-image: url(../images/hero_image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 665px;
+  width: 100%;
+  border-radius: 41px;
+  text-align: center;
+
+  h1 {
+    @include text(64px, 500, 77.45px);
+    padding-top: 163px;
+  }
+  .lorem {
+    @include text(32px, 400, 38.73px);
+    padding-top: 27px;
+  }
+
+  .buttons {
+    display: flex;
+    padding-top: 93px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 11px;
+
+    a {
+      text-decoration: none;
+      margin: 0 0;
+
+      .black {
+        @include text(24px, 600, 29.05px);
+        padding: 16px 24px;
+        color: white;
+        background-color: black;
+        justify-content: flex-end;
+        &:hover {
+          @extend %hover_template;
+        }
+      }
+
+      .white {
+        @include text(24px, 400, 29.05px);
+        padding: 16px 26px;
+        background-color: white;
+        &:hover {
+          @extend %hover_template;
+        }
+      }
+    }
+  }
+}
+// why us section
+.whyUs {
+  padding-top: 114px;
+
+  background: #f7f7f7;
+
+  h2 {
+    @include text(48px, 600, 58.09px);
+    text-align: center;
+  }
+  .cards {
+    padding-top: 102px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    @include text(24px, 400, 29.05px);
+
+    p {
+      padding-top: 80px;
+      padding-bottom: 139px;
+    }
+  }
+}
+//section D.U.K.
+.duk {
+  margin-top: 118px;
+  margin-bottom: 154px;
+
+  h2 {
+    @include text(48px, 600, 58.09px);
+    text-align: center;
+  }
+
+  .div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 200px;
+    gap: 134px;
+    @media screen and (max-width: 904px) {
+      & {
+        gap: 30px;
+      }
+    }
+
+    div {
+      padding-top: 118px;
+      margin: 0 0;
+      text-align: center;
+      @media screen and (max-width: 904px) {
+        & {
+          padding-top: 40px;
+        }
+      }
+
+      h3 {
+        @include text(32px, 678, 38.73px);
+      }
+
+      p {
+        padding-top: 40px;
+        @include text(24px, 400, 29.05px);
+      }
+    }
+  }
+
+  .buttons2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 200px;
+    justify-content: center;
+    gap: 11px;
+    @include text(32px, 400, 38.73px);
+
+    a {
+      text-decoration: none;
+      margin: 0 0;
+
+      .ask_live {
+        padding: 16px 24px;
+        color: white;
+        background: #414141;
+        border-radius: 11px;
+        justify-content: flex-end;
+        padding: 12px 43px 12px 32px;
+        &:hover {
+          @extend %hover_template;
+        }
+      }
+
+      .get_in_touch {
+        padding: 16px 26px;
+        padding: 12px 39px 12px 31px;
+        background: #f3f3f3;
+        border-radius: 11px;
+        position: relative;
+        &:hover {
+          @extend %hover_template;
+        }
+      }
+    }
+  }
+  .button2::after {
+    content: url(../images/sepertar.png);
+    position: absolute;
+
+    height: 1px;
+    top: 0px;
+  }
+}
+//newspaper section
+.newspaper {
+  margin-top: 91px;
+
+  h2 {
+    @include text(40px, 600, 48.41px);
+    text-align: center;
+  }
+  p {
+    padding-top: 40px;
+    @include text(24px, 400, 29.05px);
+    text-align: center;
+  }
+  form {
+    padding-top: 80px;
+    text-align: center;
+    display: flex;
+    gap: 29px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 200px;
+
+    .email {
+      padding: 22px 300px 22px 24.67px;
+      @include text(24px, 400, 29.05px);
+      border: 1px solid #000000;
+      flex-basis: 60px;
+      margin: 0 0;
+
+      @media screen and (max-width: 632px) {
+        & {
+          padding: 15px 150px 15px 17.67px;
+          @include text(17px, 400, 29.05px);
+        }
+      }
+      @media screen and (max-width: 395px) {
+        & {
+          padding: 7px 50px;
+          @include text(17px, 400, 29.05px);
+        }
+      }
+
+      //  &::placeholder {
+
+      // }
+    }
+    .submit {
+      padding: 22px 26px 22px 24px;
+      @include text(24px, 600, 29.05px);
+      background-color: black;
+      color: white;
+      margin: 0 0;
+    }
+  }
+}
+
+//footer
+footer {
+  margin-top: 221px;
+  background: #ededed;
+  min-height: 434px;
+  @include text(20px, 400, 24.2px);
+
+  h2 {
+    padding-top: 51px;
+    @include text(40px, 600, 48.41px);
+    text-align: center;
+  }
+  .div_main {
+    max-width: 1184px;
+    display: flex;
+    padding-top: 46px;
+    position: relative;
+    &::after {
+      content: url(../images/line.png);
+      position: absolute;
+      left: 0;
+      height: 1px;
+      top: 251px;
+    }
+
+    .left,
+    .right {
+      flex-direction: column;
+      p {
+        padding-bottom: 31px;
+        margin: 0 0;
+      }
+    }
+  }
+  .copyright {
+    padding-top: 130px;
+    text-align: center;
+    @include text(20px, 400, 24.2px);
+  }
+}
+
+// MEDIA
+
+@media screen and (max-width: 666px) {
+  .whyUs .cards,
+  .whyUs .card p,
+  .duk .buttons2,
+  footer,
+  .duk,
+  .whyUs,
+  .hero {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

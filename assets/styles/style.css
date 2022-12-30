@@ -1,0 +1,367 @@
+.duk .buttons2 a .get_in_touch:hover, .duk .buttons2 a .ask_live:hover, .hero .buttons a .white:hover, .hero .buttons a .black:hover {
+  font-weight: 800;
+  background: grey;
+  border: darkgray 2px solid;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
+  color: black;
+}
+
+.wrapper {
+  max-width: 1346px;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  max-width: 1512px;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+.header .logo {
+  flex-grow: 1;
+}
+.header .logo p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.05px;
+}
+.header .nav {
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+.header .nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 60.36px;
+}
+@media screen and (max-width: 441px) {
+  .header .nav ul {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .header .nav ul {
+    gap: 5px;
+  }
+}
+.header .nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.2px;
+  position: relative;
+}
+.header .nav ul li a.main:hover::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  height: 1px;
+  top: 22px;
+  background: black;
+  width: 92px;
+}
+.header .nav ul li a.gallery:hover::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  height: 1px;
+  top: 22px;
+  background: black;
+  width: 66px;
+}
+.header .nav ul li a.prices:hover::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  height: 1px;
+  top: 22px;
+  background: black;
+  width: 58px;
+}
+
+.hero {
+  margin-top: 40px;
+  margin-bottom: 108px;
+  background-image: url(../images/hero_image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 665px;
+  width: 100%;
+  border-radius: 41px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 77.45px;
+  padding-top: 163px;
+}
+.hero .lorem {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38.73px;
+  padding-top: 27px;
+}
+.hero .buttons {
+  display: flex;
+  padding-top: 93px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+.hero .buttons a {
+  text-decoration: none;
+  margin: 0 0;
+}
+.hero .buttons a .black {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.05px;
+  padding: 16px 24px;
+  color: white;
+  background-color: black;
+  justify-content: flex-end;
+}
+.hero .buttons a .white {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.05px;
+  padding: 16px 26px;
+  background-color: white;
+}
+.whyUs {
+  padding-top: 114px;
+  background: #f7f7f7;
+}
+.whyUs h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58.09px;
+  text-align: center;
+}
+.whyUs .cards {
+  padding-top: 102px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.05px;
+}
+.whyUs .cards p {
+  padding-top: 80px;
+  padding-bottom: 139px;
+}
+
+.duk {
+  margin-top: 118px;
+  margin-bottom: 154px;
+}
+.duk h2 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58.09px;
+  text-align: center;
+}
+.duk .div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 200px;
+  gap: 134px;
+}
+@media screen and (max-width: 904px) {
+  .duk .div {
+    gap: 30px;
+  }
+}
+.duk .div div {
+  padding-top: 118px;
+  margin: 0 0;
+  text-align: center;
+}
+@media screen and (max-width: 904px) {
+  .duk .div div {
+    padding-top: 40px;
+  }
+}
+.duk .div div h3 {
+  font-size: 32px;
+  font-weight: 678;
+  line-height: 38.73px;
+}
+.duk .div div p {
+  padding-top: 40px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.05px;
+}
+.duk .buttons2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 200px;
+  justify-content: center;
+  gap: 11px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38.73px;
+}
+.duk .buttons2 a {
+  text-decoration: none;
+  margin: 0 0;
+}
+.duk .buttons2 a .ask_live {
+  padding: 16px 24px;
+  color: white;
+  background: #414141;
+  border-radius: 11px;
+  justify-content: flex-end;
+  padding: 12px 43px 12px 32px;
+}
+.duk .buttons2 a .get_in_touch {
+  padding: 16px 26px;
+  padding: 12px 39px 12px 31px;
+  background: #f3f3f3;
+  border-radius: 11px;
+  position: relative;
+}
+.duk .button2::after {
+  content: url(../images/sepertar.png);
+  position: absolute;
+  height: 1px;
+  top: 0px;
+}
+
+.newspaper {
+  margin-top: 91px;
+}
+.newspaper h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48.41px;
+  text-align: center;
+}
+.newspaper p {
+  padding-top: 40px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.05px;
+  text-align: center;
+}
+.newspaper form {
+  padding-top: 80px;
+  text-align: center;
+  display: flex;
+  gap: 29px;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-basis: 200px;
+}
+.newspaper form .email {
+  padding: 22px 300px 22px 24.67px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.05px;
+  border: 1px solid #000000;
+  flex-basis: 60px;
+  margin: 0 0;
+}
+@media screen and (max-width: 632px) {
+  .newspaper form .email {
+    padding: 15px 150px 15px 17.67px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 29.05px;
+  }
+}
+@media screen and (max-width: 395px) {
+  .newspaper form .email {
+    padding: 7px 50px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 29.05px;
+  }
+}
+.newspaper form .submit {
+  padding: 22px 26px 22px 24px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.05px;
+  background-color: black;
+  color: white;
+  margin: 0 0;
+}
+
+footer {
+  margin-top: 221px;
+  background: #ededed;
+  min-height: 434px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.2px;
+}
+footer h2 {
+  padding-top: 51px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48.41px;
+  text-align: center;
+}
+footer .div_main {
+  max-width: 1184px;
+  display: flex;
+  padding-top: 46px;
+  position: relative;
+}
+footer .div_main::after {
+  content: url(../images/line.png);
+  position: absolute;
+  left: 0;
+  height: 1px;
+  top: 251px;
+}
+footer .div_main .left,
+footer .div_main .right {
+  flex-direction: column;
+}
+footer .div_main .left p,
+footer .div_main .right p {
+  padding-bottom: 31px;
+  margin: 0 0;
+}
+footer .copyright {
+  padding-top: 130px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.2px;
+}
+
+@media screen and (max-width: 666px) {
+  .whyUs .cards,
+.whyUs .card p,
+.duk .buttons2,
+footer,
+.duk,
+.whyUs,
+.hero {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
