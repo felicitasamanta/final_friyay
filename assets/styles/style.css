@@ -9,6 +9,7 @@
   padding: 0 auto;
   box-sizing: border-box;
   color: black;
+  font-family: "Poppins", sans-serif;
 }
 
 .wrapper {
@@ -31,7 +32,10 @@
 .header .logo {
   flex-grow: 1;
 }
-.header .logo p {
+.header .logo a {
+  text-decoration: none;
+}
+.header .logo a h1 {
   font-size: 24px;
   font-weight: 400;
   line-height: 29.05px;
@@ -103,7 +107,7 @@
   border-radius: 41px;
   text-align: center;
 }
-.hero h1 {
+.hero h2 {
   font-size: 64px;
   font-weight: 500;
   line-height: 77.45px;
@@ -114,6 +118,7 @@
   font-weight: 400;
   line-height: 38.73px;
   padding-top: 27px;
+  max-width: 767px;
 }
 .hero .buttons {
   display: flex;
@@ -146,7 +151,7 @@
   padding-top: 114px;
   background: #f7f7f7;
 }
-.whyUs h2 {
+.whyUs h3 {
   font-size: 48px;
   font-weight: 600;
   line-height: 58.09px;
@@ -162,7 +167,11 @@
   font-weight: 400;
   line-height: 29.05px;
 }
+.whyUs .cards div img {
+  width: 100%;
+}
 .whyUs .cards p {
+  max-width: 364px;
   padding-top: 80px;
   padding-bottom: 139px;
 }
@@ -171,7 +180,7 @@
   margin-top: 118px;
   margin-bottom: 154px;
 }
-.duk h2 {
+.duk h3 {
   font-size: 48px;
   font-weight: 600;
   line-height: 58.09px;
@@ -199,7 +208,7 @@
     padding-top: 40px;
   }
 }
-.duk .div div h3 {
+.duk .div div h4 {
   font-size: 32px;
   font-weight: 678;
   line-height: 38.73px;
@@ -209,6 +218,7 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 29.05px;
+  max-width: 443px;
 }
 .duk .buttons2 {
   display: flex;
@@ -249,7 +259,7 @@
 .newspaper {
   margin-top: 91px;
 }
-.newspaper h2 {
+.newspaper h3 {
   font-size: 40px;
   font-weight: 600;
   line-height: 48.41px;
@@ -261,6 +271,7 @@
   font-weight: 400;
   line-height: 29.05px;
   text-align: center;
+  max-width: 539px;
 }
 .newspaper form {
   padding-top: 80px;
@@ -314,7 +325,7 @@ footer {
   font-weight: 400;
   line-height: 24.2px;
 }
-footer h2 {
+footer h3 {
   padding-top: 51px;
   font-size: 40px;
   font-weight: 600;
