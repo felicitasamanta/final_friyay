@@ -193,6 +193,11 @@
   flex-basis: 200px;
   gap: 134px;
 }
+@media screen and (max-width: 1192px) {
+  .duk .div {
+    gap: 30px;
+  }
+}
 @media screen and (max-width: 904px) {
   .duk .div {
     gap: 30px;
@@ -202,6 +207,11 @@
   padding-top: 118px;
   margin: 0 0;
   text-align: center;
+}
+@media screen and (max-width: 1192px) {
+  .duk .div div {
+    padding-top: 50px;
+  }
 }
 @media screen and (max-width: 904px) {
   .duk .div div {
@@ -229,6 +239,11 @@
   font-size: 32px;
   font-weight: 400;
   line-height: 38.73px;
+}
+@media screen and (max-width: 1087px) {
+  .duk .buttons2 {
+    padding-top: 40px;
+  }
 }
 .duk .buttons2 a {
   text-decoration: none;

@@ -178,6 +178,11 @@
     flex-wrap: wrap;
     flex-basis: 200px;
     gap: 134px;
+    @media screen and (max-width: 1192px) {
+      & {
+        gap: 30px;
+      }
+    }
     @media screen and (max-width: 904px) {
       & {
         gap: 30px;
@@ -188,6 +193,9 @@
       padding-top: 118px;
       margin: 0 0;
       text-align: center;
+      @media screen and (max-width: 1192px) {
+        padding-top: 50px;
+      }
       @media screen and (max-width: 904px) {
         & {
           padding-top: 40px;
@@ -213,6 +221,11 @@
     justify-content: center;
     gap: 11px;
     @include text(32px, 400, 38.73px);
+    @media screen and (max-width: 1087px) {
+      & {
+        padding-top: 40px;
+      }
+    }
 
     a {
       text-decoration: none;
